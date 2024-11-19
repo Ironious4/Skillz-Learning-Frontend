@@ -7,6 +7,7 @@ import PaymentPage from './pages/PaymentPage';
 import Browser from './pages/Browser';
 import { MessagesProvider } from './components/MessagesContext'; 
 import MessagesPage from './pages/MessagesPage';
+import TwoFactorAuth from './components/TwoFactorAuth'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
               <Route path="/messages" element={<MessagesPage />} />
               <Route path="/payment/:courseId/:learnerId/:price" element={<PaymentPage />} />
               <Route path="/browser" element={<Browser />} />
+              <Route path="/TwoFactorAuth" element={<TwoFactorAuth />} />
             </Routes> 
           </div>
         </Router>
