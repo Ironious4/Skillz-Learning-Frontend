@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import SignUpForm from './components/SignUpForm';
+import SignInForm from './components/SignInForm';
 import Home from './pages/Home';
 import Profile from './pages/InstructorProfile';
 import InstructorProfile from './components/InstructorProfile'; 
@@ -17,6 +19,8 @@ const App = () => {
           <div className="content">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/signin" element={<SignInForm />} />
+              <Route path="/signup" element={<SignUpForm />} />
               <Route path="/users" element={<UsersList />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/instructorprofile" element={<InstructorProfile />} />
