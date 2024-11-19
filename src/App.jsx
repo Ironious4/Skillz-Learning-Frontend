@@ -10,6 +10,7 @@ import Browser from './pages/Browser';
 import { MessagesProvider } from './components/MessagesContext'; 
 import MessagesPage from './pages/MessagesPage';
 import TwoFactorAuth from './components/TwoFactorAuth'
+import CourseContent from './pages/coursecontent'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
               <Route path="/payment/:courseId/:learnerId/:price" element={<PaymentPage />} />
               <Route path="/browser" element={<Browser />} />
               <Route path="/TwoFactorAuth" element={<TwoFactorAuth />} />
+              <Route path='/coursecontent/:courseId' element={<CourseContent/>}/>
             </Routes> 
           </div>
         </Router>
