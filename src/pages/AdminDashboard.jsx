@@ -108,4 +108,4 @@ const InstructorDashboard = ({ user }) => {
   );
 };
 
-export default InstructorDash
+export default InstructorDashboard;
