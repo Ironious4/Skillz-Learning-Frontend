@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
+import { MessagesProvider } from './components/MessagesContext'; 
 
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
           <div className="content">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/messages" element={<MessagesPage />} />
             </Routes> 
           </div>
         </Router>
