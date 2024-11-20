@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import BASE_URL from "./UTILS";
-import "./usersLists.css";
+import "./usersList.css";
 import Sidebar from "../components/Sidebar";
 
 const UsersList = () => {

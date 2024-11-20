@@ -245,7 +245,7 @@ function Home() {
         <Row>
           <Col style={{ paddingLeft: '220px' }}>
             {faqs.map((faq, index) => (
-              <div key={index} style={{ margin: '20px 0', cursor: 'pointer', borderBottom: '1px solid white', width: "900px", paddingBottom: '20px' }} onClick={() => toggleFAQ(index)}>
+              <div key={index} style={{ margin: '20px 0', cursor: 'pointer', borderBottom: '1px solid white', width: "500px", paddingBottom: '20px' }} onClick={() => toggleFAQ(index)}>
                 <h4>{faq.question}</h4>
                 {activeIndex === index && (
                   <p style={{ marginTop: '10px', fontSize: 'medium' }}>
