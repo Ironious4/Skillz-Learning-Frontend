@@ -2,3 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    max-width: 10000px; 
+    margin: 0 auto;  
+    padding: 0 20px;
+    font-size: 20px; /* instead of a fixed pixel size */
+    width: 90%; /* instead of a fixed pixel width */
+
+}
